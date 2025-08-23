@@ -16,13 +16,13 @@ export default function App() {
       setLoading(true);
       setError("");
 
-      const apiKey = import.meta.env.VITE_NEWSAPI_KEY;
+      const apiKey = import.meta.env.VITE_GNEWS_API_KEY;
       if (!apiKey)
         throw new Error("Missing API key. Add VITE_NEWSAPI_KEY to .env");
 
       // Fetch top headlines (default: US). Change country/category to your needs.
       const resp = await fetch(
-        `https://newsapi.org/v2/top-headlines?country=us&pageSize=50&apiKey=${apiKey}`
+        `https://gnews.io/api/v4/top-headlines?category=general&lang=en&country=us&max=10&apikey=${apiKey}`
       );
       if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
       const data = await resp.json();
@@ -71,7 +71,7 @@ export default function App() {
               rel="noreferrer"
               className="text-sm underline underline-offset-4 opacity-70 hover:opacity-100"
             >
-              Powered by NewsAPI
+              Powered by GNews API
             </a>
           </div>
         </header>
@@ -117,7 +117,7 @@ function ArticleCard({ article, loading }) {
   const {
     title,
     url,
-    urlToImage: imageUrl,
+    image: imageUrl,
     description,
     source,
     publishedAt,
