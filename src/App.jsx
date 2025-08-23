@@ -10,6 +10,7 @@ export default function App() {
   const [articles, setArticles] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
+  const MAX_RESULTS = 10;
 
   const fetchRandomArticles = async () => {
     try {
@@ -20,9 +21,10 @@ export default function App() {
       if (!apiKey)
         throw new Error("Missing API key. Add VITE_NEWSAPI_KEY to .env");
 
+      const page = Math.floor(Math.random() * MAX_RESULTS);
       // Fetch top headlines (default: US). Change country/category to your needs.
       const resp = await fetch(
-        `https://gnews.io/api/v4/top-headlines?category=general&lang=en&country=us&max=10&apikey=${apiKey}`
+        `https://gnews.io/api/v4/top-headlines?category=science&lang=en&country=us&max=${MAX_RESULTS}&page=${page}&apikey=${apiKey}`
       );
       if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
       const data = await resp.json();
