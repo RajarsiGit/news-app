@@ -68,7 +68,7 @@ export default function App() {
               {loading ? "Loading…" : "Shuffle"}
             </button>
             <a
-              href="https://newsapi.org/"
+              href="https://gnews.io/"
               target="_blank"
               rel="noreferrer"
               className="text-sm underline underline-offset-4 opacity-70 hover:opacity-100"
