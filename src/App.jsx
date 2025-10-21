@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { ClipLoader } from "react-spinners";
 
 // Random News App
 // Uses the NewsAPI.org top-headlines endpoint
@@ -54,6 +55,28 @@ export default function App() {
     fetchRandomArticles();
   }, []);
 
+  const renderContent = () => {
+    if (loading) {
+      return (
+        <div className="flex justify-center items-center p-16">
+          <ClipLoader color="#3b82f6" size={80} />
+        </div>
+      );
+    }
+
+    if (!articles.length) {
+      return (
+        <div className="p-8 text-center text-gray-500">
+          No articles to display.
+        </div>
+      );
+    }
+
+    return articles.map((article, i) => (
+      <ArticleCard key={i} article={article} />
+    ));
+  };
+
   return (
     <div className="min-h-screen bg-gray-50 text-gray-900 flex items-center justify-center p-6">
       <div className="w-full max-w-3xl">
@@ -84,36 +107,13 @@ export default function App() {
           </div>
         )}
 
-        <main className="flex flex-col gap-6">
-          {!articles.length && !loading ? (
-            <div className="p-8 text-center text-gray-500">
-              No articles to display.
-            </div>
-          ) : (
-            articles.map((article, i) => (
-              <ArticleCard key={i} article={article} loading={loading} />
-            ))
-          )}
-        </main>
+        <main className="flex flex-col gap-6">{renderContent()}</main>
       </div>
     </div>
   );
 }
 
-function ArticleCard({ article, loading }) {
-  if (loading) {
-    return (
-      <div className="p-8 animate-pulse border rounded-2xl shadow-sm">
-        <div className="h-40 w-full bg-gray-200" />
-        <div className="p-4 space-y-3">
-          <div className="h-6 w-3/4 bg-gray-200" />
-          <div className="h-4 w-full bg-gray-200" />
-          <div className="h-4 w-11/12 bg-gray-200" />
-        </div>
-      </div>
-    );
-  }
-
+function ArticleCard({ article }) {
   if (!article) return null;
 
   const {
