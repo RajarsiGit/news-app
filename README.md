@@ -95,7 +95,7 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## Recent Activity
 <!--START_SECTION:activity-->
-1. 💪 Opened PR [#4](https://github.com/RajarsiGit/Rasa-Flask-ChatBot-v1/pull/4) in [RajarsiGit/Rasa-Flask-ChatBot-v1](https://github.com/RajarsiGit/Rasa-Flask-ChatBot-v1)
+1. 🎉 Merged PR [#4](https://github.com/RajarsiGit/Rasa-Flask-ChatBot-v1/pull/4) in [RajarsiGit/Rasa-Flask-ChatBot-v1](https://github.com/RajarsiGit/Rasa-Flask-ChatBot-v1)
 <!--END_SECTION:activity-->
 
 ## Acknowledgments
