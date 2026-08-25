@@ -95,7 +95,7 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## Recent Activity
 <!--START_SECTION:activity-->
-1. 🎉 Merged PR [#4](https://github.com/RajarsiGit/Rasa-Flask-ChatBot-v1/pull/4) in [RajarsiGit/Rasa-Flask-ChatBot-v1](https://github.com/RajarsiGit/Rasa-Flask-ChatBot-v1)
+1. 🎉 Merged PR [#14](https://github.com/RajarsiGit/ToDo-CLI-Python/pull/14) in [RajarsiGit/ToDo-CLI-Python](https://github.com/RajarsiGit/ToDo-CLI-Python)
 <!--END_SECTION:activity-->
 
 ## Acknowledgments
