@@ -95,7 +95,7 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## Recent Activity
 <!--START_SECTION:activity-->
-1. 🎉 Merged PR [#14](https://github.com/RajarsiGit/ToDo-CLI-Python/pull/14) in [RajarsiGit/ToDo-CLI-Python](https://github.com/RajarsiGit/ToDo-CLI-Python)
+1. 🎉 Merged PR [#1](https://github.com/RajarsiGit/stickynotes/pull/1) in [RajarsiGit/stickynotes](https://github.com/RajarsiGit/stickynotes)
 <!--END_SECTION:activity-->
 
 ## Acknowledgments
