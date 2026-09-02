@@ -95,7 +95,7 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## Recent Activity
 <!--START_SECTION:activity-->
-1. 🎉 Merged PR [#1](https://github.com/RajarsiGit/stickynotes/pull/1) in [RajarsiGit/stickynotes](https://github.com/RajarsiGit/stickynotes)
+1. 🗣 Commented on [#7077](https://github.com/opensearch-project/data-prepper/issues/7077#issuecomment-5509700388) in [opensearch-project/data-prepper](https://github.com/opensearch-project/data-prepper)
 <!--END_SECTION:activity-->
 
 ## Acknowledgments
